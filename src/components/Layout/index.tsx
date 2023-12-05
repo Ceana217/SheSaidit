@@ -1,4 +1,4 @@
-import React {ReactNode} from "react";
+import React, {ReactNode} from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase/clientApp";
 import useAuth from "../../hooks/useAuth";
