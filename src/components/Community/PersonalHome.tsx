@@ -21,7 +21,8 @@ const PersonalHome: React.FC = () => {
         height="34px"
         borderRadius="4px 4px 0px 0px"
         fontWeight={600}
-        bgImage="url(/images/redditPersonalHome.png)"
+        bgGradient="linear-gradient(to bottom, #FF7777, #FFD6E6),
+        url('images/recCommsArt.png')"
         backgroundSize="cover"
       ></Flex>
       <Flex direction="column" p="12px">
