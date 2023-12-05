@@ -13,7 +13,10 @@ npm i
 Run the development server:
 npm run dev
 
-Resources Used: https://www.youtube.com/watch?v=rCm5RVYKWVg&t=41503s
+Resources Used: 
+https://www.youtube.com/watch?v=rCm5RVYKWVg&t=41503s
+https://www.youtube.com/watch?v=zhx9FUSuAsM&list=PLu3PzwcGv6t7Xygj1GLM5DMKihUG2a92Y
+https://www.youtube.com/watch?v=mSUKMfmLAt0&t=17603s
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
