@@ -2,13 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Install Chackra UI:
+npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
 
-```bash
+Install Firebase: 
+npm install firebase 
+
+npm i
+
+Run the development server:
 npm run dev
-# or
-yarn dev
-```
+
+Resources Used: https://www.youtube.com/watch?v=rCm5RVYKWVg&t=41503s
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
