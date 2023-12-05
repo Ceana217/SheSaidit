@@ -1,18 +1,23 @@
+import { Flex } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
-import { Box, Flex } from "@chakra-ui/react";
 
-interface PageContentLayoutProps {
-   children: any;
-}
+type PageContentProps = {
+  children: any;
+};
 
-// Assumes array of two children are passed
-const PageContentLayout: React.FC<PageContentLayoutProps> = ({
-  children,
-  maxWidth,
-}) => {
+const PageContent: React.FC<PageContentProps> = ({ children }) => {
+  const router = useRouter();
+  const uid = router.query;
+
   return (
     <Flex justify="center" p="16px 0px">
-      <Flex width="95%" justify="center" maxWidth={maxWidth || "860px"}>
+      <Flex
+        width="95%"
+        justify="center"
+        maxWidth={uid.uid ? "1160px" : "860px"}
+      >
+        {/* Left */}
         <Flex
           direction="column"
           width={{ base: "100%", md: "65%" }}
@@ -20,17 +25,18 @@ const PageContentLayout: React.FC<PageContentLayoutProps> = ({
         >
           {children && children[0 as keyof typeof children]}
         </Flex>
-        {/* Right Content */}
-        <Box
+
+        {/* Right */}
+        <Flex
+          direction="column"
           display={{ base: "none", md: "flex" }}
-          flexDirection="column"
           flexGrow={1}
         >
           {children && children[1 as keyof typeof children]}
-        </Box>
+        </Flex>
       </Flex>
     </Flex>
   );
 };
+export default PageContent;
 
-export default PageContentLayout;
